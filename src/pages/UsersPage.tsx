@@ -109,7 +109,7 @@ export const UsersPage: React.FC = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title="Tambah Akun Pengguna"
-        subtitle="Sistem Hak Akses Multi-User SMP NU"
+        subtitle="Sistem Hak Akses Multi-User SMP NUHA MERGOSONO"
         maxWidth="md"
         id="modal-add-user"
       >

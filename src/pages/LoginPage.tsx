@@ -112,7 +112,7 @@ export const LoginPage: React.FC = () => {
               Aplikasi Bendahara & Kasir SPP Sekolah
             </h2>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Portal terpadu pencatatan penerimaan kasir SPP, rekapitulasi tunggakan kelas, cetak kuitansi resmi, dan pelaporan keuangan executive SMP NUHA Mergosono Malang.
+              Portal terpadu pencatatan penerimaan kasir SPP, rekapitulasi tunggakan kelas, cetak kuitansi resmi, dan pelaporan keuangan executive SMP NUHA MERGOSONO Malang.
             </p>
           </div>
 
@@ -279,9 +279,9 @@ export const LoginPage: React.FC = () => {
 
       {/* Footer Credentials Info */}
       <div className="w-full max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 border-t border-slate-800 pt-4 z-10 gap-2">
-        <p>© 2026 SMP NUHA Mergosono Malang. Hak Cipta Dilindungi Undang-Undang.</p>
+        <p>© 2026 SMP NUHA MERGOSONO Malang. Hak Cipta Dilindungi Undang-Undang.</p>
         <p className="flex items-center gap-2">
-          <span>NPSN: 70042822</span> • <span>TA 2025/2026 Ganjil</span>
+          <span>NPSN: 20531234</span> • <span>TA 2025/2026 Ganjil</span>
         </p>
       </div>
     </div>

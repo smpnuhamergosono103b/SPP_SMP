@@ -94,7 +94,7 @@ export const AcademicYearsPage: React.FC = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title="Tambah Tahun Ajaran Baru"
-        subtitle="Sistem Kalender Akademik SMP NU"
+        subtitle="Sistem Kalender Akademik SMP NUHA MERGOSONO"
         maxWidth="md"
         id="modal-add-academic-year"
       >

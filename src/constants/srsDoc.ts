@@ -1,6 +1,6 @@
 export const SRS_DOCUMENTATION = {
   title: "Software Requirement Specification (SRS)",
-  subtitle: "Sistem Manajemen Keuangan & Bendahara Sekolah SMP NU",
+  subtitle: "Sistem Manajemen Keuangan & Bendahara Sekolah SMP NUHA MERGOSONO",
   version: "1.0.0 (Production Ready)",
   author: "Senior Software Architect & UI/UX Designer",
   date: "Agustus 2026",

@@ -161,7 +161,7 @@ export const PaymentTypesPage: React.FC = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title={editingPt ? 'Edit Jenis Pembayaran' : 'Tambah Pos Biaya Baru'}
-        subtitle="Pengaturan Struktur Biaya Sekolah SMP NU"
+        subtitle="Pengaturan Struktur Biaya Sekolah SMP NUHA MERGOSONO"
         maxWidth="md"
         id="modal-payment-type-form"
       >

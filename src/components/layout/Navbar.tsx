@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div>
             <h1 className="text-base font-extrabold text-slate-900 dark:text-white leading-tight">
-              SMP NU MERGOSONO
+              SMP NUHA MERGOSONO
             </h1>
             <div className="flex items-center gap-2 mt-0.5">
               <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">

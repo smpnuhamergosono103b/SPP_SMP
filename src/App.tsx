@@ -31,7 +31,7 @@ function AppContent() {
       <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
         <div className="flex flex-col items-center gap-3">
           <div className="w-10 h-10 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin" />
-          <p className="text-xs font-bold text-slate-300 tracking-wide">Memuat Sistem Bendahara SMP NU...</p>
+          <p className="text-xs font-bold text-slate-300 tracking-wide">Memuat Sistem Bendahara SMP NUHA MERGOSONO...</p>
         </div>
       </div>
     );

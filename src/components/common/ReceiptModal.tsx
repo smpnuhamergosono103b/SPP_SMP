@@ -160,7 +160,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
           {/* Security Badge Footer */}
           <div className="mt-8 pt-3 border-t border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-between text-[10px] text-slate-400">
             <span className="flex items-center gap-1">
-              <ShieldCheck className="w-3 h-3 text-emerald-500" /> Dokumen Resmi Terverifikasi Sistem Bendahara SMP NU
+              <ShieldCheck className="w-3 h-3 text-emerald-500" /> Dokumen Resmi Terverifikasi Sistem Bendahara SMP NUHA MERGOSONO
             </span>
             <span>Ref ID: {payment.id}</span>
           </div>

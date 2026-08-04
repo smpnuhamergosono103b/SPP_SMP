@@ -1,6 +1,6 @@
 export const SUPABASE_SQL_SCHEMA = `-- ====================================================================
 -- SKEMA DATABASE POSTGRESQL / SUPABASE
--- SISTEM BENDAHARA SEKOLAH (SMP NU / SMP NEGERI/SWASTA)
+-- SISTEM BENDAHARA SEKOLAH (SMP NUHA MERGOSONO / SMP NEGERI/SWASTA)
 -- ====================================================================
 
 -- 1. EXTENSIONS & SCHEMA CLEANUP
@@ -133,12 +133,12 @@ CREATE TABLE payment_history (
 -- 10. TABEL SCHOOL_SETTINGS (Pengaturan Profil Sekolah)
 CREATE TABLE school_settings (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    school_name VARCHAR(150) NOT NULL DEFAULT 'SMP NU MERGOSONO',
+    school_name VARCHAR(150) NOT NULL DEFAULT 'SMP NUHA MERGOSONO',
     npsn VARCHAR(20) DEFAULT '20531234',
     address TEXT DEFAULT 'Jl. Kolonel Sugiono No. 12, Mergosono, Kedungkandang, Kota Malang',
     phone VARCHAR(20) DEFAULT '(0341) 325888',
-    email VARCHAR(100) DEFAULT 'smpnumergosono@gmail.com',
-    website VARCHAR(100) DEFAULT 'https://smpnumergosono.sch.id',
+    email VARCHAR(100) DEFAULT 'smpnuhamergosono@gmail.com',
+    website VARCHAR(100) DEFAULT 'https://smpnuhamergosono.sch.id',
     logo_url TEXT,
     principal_name VARCHAR(100) DEFAULT 'Drs. H. Ahmad Fauzi, M.Pd.',
     principal_nip VARCHAR(30) DEFAULT '19750812 200212 1 003',

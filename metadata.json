@@ -1,6 +1,6 @@
 {
-  "name": "Sistem Bendahara Sekolah SMP",
-  "description": "Dokumentasi SRS & Skema Database Supabase PostgreSQL Sistem Bendahara Sekolah SMP",
+  "name": "Sistem Bendahara SMP NUHA MERGOSONO",
+  "description": "Sistem Manajemen Keuangan, Kasir SPP, dan Pelaporan Bendahara SMP NUHA MERGOSONO Malang",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

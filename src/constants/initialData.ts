@@ -10,12 +10,12 @@ import {
 
 export const INITIAL_SCHOOL_SETTINGS: SchoolSettings = {
   id: 'set-1',
-  school_name: 'SMP NU MERGOSONO MALANG',
+  school_name: 'SMP NUHA MERGOSONO MALANG',
   npsn: '20531234',
   address: 'Jl. Kolonel Sugiono No. 12, Mergosono, Kedungkandang, Kota Malang, Jawa Timur 65148',
   phone: '(0341) 325888',
-  email: 'smpnumergosono@gmail.com',
-  website: 'https://smpnumergosono.sch.id',
+  email: 'smpnuhamergosono@gmail.com',
+  website: 'https://smpnuhamergosono.sch.id',
   logo_url: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=150&auto=format&fit=crop&q=80',
   principal_name: 'Drs. H. Ahmad Fauzi, M.Pd.',
   principal_nip: '19750812 200212 1 003',
@@ -24,7 +24,7 @@ export const INITIAL_SCHOOL_SETTINGS: SchoolSettings = {
   active_academic_year_id: 'ay-2025-2026',
   bank_name: 'Bank BNI Syariah / BSI',
   bank_account_number: '123-456-7890',
-  bank_account_holder: 'YAYASAN SMP NU MERGOSONO'
+  bank_account_holder: 'YAYASAN SMP NUHA MERGOSONO'
 };
 
 export const INITIAL_ACADEMIC_YEARS: AcademicYear[] = [
@@ -60,7 +60,7 @@ export const INITIAL_USERS: User[] = [
     id: 'usr-1',
     username: 'bendahara',
     full_name: 'Siti Rahmah, S.Pd.',
-    email: 'bendahara@smpnumergosono.sch.id',
+    email: 'bendahara@smpnuhamergosono.sch.id',
     phone: '0812-3456-7890',
     role: 'bendahara',
     is_active: true,
@@ -70,7 +70,7 @@ export const INITIAL_USERS: User[] = [
     id: 'usr-2',
     username: 'kepala_sekolah',
     full_name: 'Drs. H. Ahmad Fauzi, M.Pd.',
-    email: 'kepsek@smpnumergosono.sch.id',
+    email: 'kepsek@smpnuhamergosono.sch.id',
     phone: '0813-9876-5432',
     role: 'kepala_sekolah',
     is_active: true,
@@ -80,7 +80,7 @@ export const INITIAL_USERS: User[] = [
     id: 'usr-3',
     username: 'admin',
     full_name: 'Administrator IT',
-    email: 'admin@smpnumergosono.sch.id',
+    email: 'admin@smpnuhamergosono.sch.id',
     phone: '0857-1122-3344',
     role: 'admin',
     is_active: true,

@@ -81,7 +81,7 @@ export const ClassesPage: React.FC = () => {
             Master Kelas & Wali Kelas
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            Daftar pembagian Rombongan Belajar (Rombel) Tingkat 7, 8, dan 9 SMP NU.
+            Daftar pembagian Rombongan Belajar (Rombel) Tingkat 7, 8, dan 9 SMP NUHA MERGOSONO.
           </p>
         </div>
         <button
@@ -159,7 +159,7 @@ export const ClassesPage: React.FC = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title={editingClass ? 'Edit Rombel Kelas' : 'Tambah Kelas Baru'}
-        subtitle="Sistem Manajemen Rombel SMP NU Mergosono"
+        subtitle="Sistem Manajemen Rombel SMP NUHA MERGOSONO"
         maxWidth="md"
         id="modal-class-form"
       >

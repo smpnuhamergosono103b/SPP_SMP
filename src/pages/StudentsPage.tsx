@@ -278,7 +278,7 @@ export const StudentsPage: React.FC = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title={editingStudent ? 'Edit Data Siswa' : 'Tambah Siswa Baru'}
-        subtitle="Sistem Informasi Induk Siswa SMP NU Mergosono"
+        subtitle="Sistem Informasi Induk Siswa SMP NUHA MERGOSONO"
         maxWidth="lg"
         id="modal-student-form"
       >

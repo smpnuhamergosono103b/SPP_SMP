@@ -69,7 +69,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             Sistem Informasi Keuangan Sekolah
           </span>
           <h2 className="text-2xl font-extrabold mt-2">
-            Selamat Datang di Sistem Bendahara SMP NU
+            Selamat Datang di Sistem Bendahara SMP NUHA MERGOSONO
           </h2>
           <p className="text-xs text-emerald-100/90 mt-1 max-w-2xl">
             Kelola penerimaan kas SPP, uang pangkal, seragam, dan laporan keuangan sekolah secara efisien, terintegrasi, dan transparan.
@@ -140,7 +140,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                   Rekapitulasi SPP Per Kelas
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Status kelunasan SPP bulanan untuk seluruh kelas SMP NU
+                  Status kelunasan SPP bulanan untuk seluruh kelas SMP NUHA MERGOSONO
                 </p>
               </div>
             </div>
