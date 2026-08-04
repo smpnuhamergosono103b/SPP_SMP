@@ -30,7 +30,7 @@ export const PaymentsPage: React.FC<PaymentsPageProps> = ({ onViewReceipt }) => 
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const [selectedPaymentTypeId, setSelectedPaymentTypeId] = useState<string>('pt-spp');
   const [selectedMonth, setSelectedMonth] = useState<number>(new Date().getMonth() + 1);
-  const [amountPaid, setAmountPaid] = useState<number>(150000);
+  const [amountPaid, setAmountPaid] = useState<number>(250000);
   const [paymentMethod, setPaymentMethod] = useState<'cash' | 'bank_transfer' | 'qris'>('cash');
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -10,7 +10,7 @@ export const SRS_DOCUMENTATION = {
       title: "1. Functional Requirements (Kebutuhan Fungsional)",
       items: [
         "**FR-1 Master Data Management:** Pengelolaan data Siswa, Kelas, Wali Kelas, Tahun Ajaran, dan Profil Pengguna (Bendahara, Kepala Sekolah, Admin).",
-        "**FR-2 Jenis Pembayaran:** Pengaturan jenis tagihan (SPP Bulanan, Uang Gedung/Pangkal, Seragam, Ujian, Kegiatan) dengan nominal, sifat (wajib/sukarela), dan periode bayar.",
+        "**FR-2 Jenis Pembayaran:** Pengaturan jenis tagihan (SPP Bulanan, Uang Makan, Uang Sarpras, Uang Kesehatan, Uang Pendaftaran Awal) dengan nominal, sifat (wajib/sukarela), dan periode bayar.",
         "**FR-3 Entry Transaksi Pembayaran:** Pencatatan transaksi real-time dengan pemilihan Siswa (pencarian NIS/Nama), jenis tagihan, bulan SPP, nominal bayar, dan kanal bayar (Tunai, Transfer Bank, QRIS).",
         "**FR-4 Kuitansi & Bukti Bayar:** Cetak kuitansi resmi (format PDF / thermal print) dengan nomor kuitansi unik otomatis, stempel sekolah, dan nama bendahara penerima.",
         "**FR-5 Status Tunggakan & Tagihan:** Kalkulasi otomatis sisa tagihan/tunggakan siswa per kelas dan per bulan SPP.",
