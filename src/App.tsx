@@ -8,6 +8,7 @@ import { Payment, SchoolSettings } from './types';
 import { INITIAL_SCHOOL_SETTINGS } from './constants/initialData';
 
 // Pages
+import { LoginPage } from './pages/LoginPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { PaymentsPage } from './pages/PaymentsPage';
 import { StudentsPage } from './pages/StudentsPage';
@@ -20,9 +21,25 @@ import { SettingsPage } from './pages/SettingsPage';
 import { SrsAndDatabaseDocPage } from './pages/SrsAndDatabaseDocPage';
 
 function AppContent() {
+  const { currentUser, isLoading } = useAuth();
   const [currentRoute, setCurrentRoute] = useState<NavRoute>('dashboard');
   const [activeReceiptPayment, setActiveReceiptPayment] = useState<Payment | null>(null);
   const [schoolSettings] = useState<SchoolSettings>(INITIAL_SCHOOL_SETTINGS);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-10 h-10 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-bold text-slate-300 tracking-wide">Memuat Sistem Bendahara SMP NU...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!currentUser) {
+    return <LoginPage />;
+  }
 
   const handleViewReceipt = (payment: Payment) => {
     setActiveReceiptPayment(payment);

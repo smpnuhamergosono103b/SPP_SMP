@@ -9,7 +9,8 @@ import {
   Database,
   Building2,
   ChevronDown,
-  UserCheck
+  UserCheck,
+  LogOut
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -22,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeAcademicYearName = '2025/2026 Ganjil',
   id
 }) => {
-  const { currentUser, switchRole } = useAuth();
+  const { currentUser, switchRole, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
   const supabaseConnected = isSupabaseConfigured();
 
@@ -52,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Right Side: Supabase Badge, Role Selector, Theme Toggle, User Profile */}
+        {/* Right Side: Supabase Badge, Role Selector, Theme Toggle, Logout */}
         <div className="flex items-center gap-3">
           {/* Supabase Status Indicator */}
           <div
@@ -124,8 +125,20 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Moon className="w-4 h-4 text-slate-600" />
             )}
           </button>
+
+          {/* Logout Button */}
+          <button
+            id="btn-navbar-logout"
+            onClick={logout}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-900/50 bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 text-rose-700 dark:text-rose-300 text-xs font-bold transition-all shadow-2xs"
+            title="Keluar dari Akun"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span className="hidden md:inline">Keluar</span>
+          </button>
         </div>
       </div>
     </header>
   );
 };
+

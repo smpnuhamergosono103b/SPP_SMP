@@ -11,7 +11,8 @@ import {
   Users,
   Settings,
   Database,
-  FileText
+  FileText,
+  LogOut
 } from 'lucide-react';
 
 export type NavRoute =
@@ -37,7 +38,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectRoute,
   id
 }) => {
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
   const role = currentUser?.role || 'bendahara';
 
   const mainMenuItems = [
@@ -174,18 +175,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* User Info Footer */}
-      <div className="p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3">
-        <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-extrabold flex items-center justify-center text-xs border border-emerald-300 dark:border-emerald-700">
-          {currentUser?.full_name?.charAt(0) || 'U'}
+      <div className="p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2.5 overflow-hidden">
+          <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-extrabold flex items-center justify-center text-xs border border-emerald-300 dark:border-emerald-700 shrink-0">
+            {currentUser?.full_name?.charAt(0) || 'U'}
+          </div>
+          <div className="overflow-hidden">
+            <p className="text-xs font-bold text-slate-900 dark:text-white truncate">
+              {currentUser?.full_name}
+            </p>
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 capitalize truncate">
+              {currentUser?.role?.replace('_', ' ')}
+            </p>
+          </div>
         </div>
-        <div className="overflow-hidden">
-          <p className="text-xs font-bold text-slate-900 dark:text-white truncate">
-            {currentUser?.full_name}
-          </p>
-          <p className="text-[10px] text-slate-500 dark:text-slate-400 capitalize truncate">
-            Akses: {currentUser?.role?.replace('_', ' ')}
-          </p>
-        </div>
+        <button
+          id="btn-sidebar-logout"
+          onClick={logout}
+          className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-slate-100 dark:hover:bg-slate-700/80 transition-colors shrink-0"
+          title="Keluar dari Akun"
+        >
+          <LogOut className="w-4 h-4" />
+        </button>
       </div>
     </aside>
   );
